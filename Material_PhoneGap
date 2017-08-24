@@ -6,7 +6,13 @@ Que es PhoneGap:  https://es.wikipedia.org/wiki/PhoneGap
 Primeros pasos con PhoneGap : https://www.adictosaltrabajo.com/tutoriales/empezando-phonegap/
                               https://www.tutorialspoint.com/phonegap/
                               
-Instalar en Windows :       https://openwebinars.net/blog/instalacion-phonegap-windows/
+Instalar en Windows :      -----------------------------Tutorial-----------------------------------------------------
+                            https://openwebinars.net/blog/instalacion-phonegap-windows/
+                            ------------------------------ Recursos --------------------------------------------------
+                             Java SDK : http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+                             Apache Ant : http://ant.apache.org/bindownload.cgi
+                             Android Studio: https://developer.android.com/studio/index.html
+                             
                               
 Conexion mysql-database :     https://stackoverflow.com/questions/28917860/how-to-connect-a-phonegap-mobile-app-to-a-remote-mysql-database
 
