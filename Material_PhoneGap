@@ -11,4 +11,8 @@ Conexion mysql-database :     https://stackoverflow.com/questions/28917860/how-t
 Mostrar base de datos externas:  http://www.phonegapspain.com/topic/mostrar-datos-de-base-de-datos-externa/
                                  http://www.phonegapspain.com/topic/conectar-la-aplicacion-phonegap-con-mysql-externa/
                                  https://www.youtube.com/watch?v=SEST6neebMA
+                                 
+Usar Geolocalizacion :      http://docs.phonegap.com/en/3.3.0/cordova_geolocation_geolocation.md.html#Geolocation
+
+Usar Notificaciones:        http://docs.phonegap.com/en/3.3.0/cordova_notification_notification.md.html#Notification
               
