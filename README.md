@@ -1,4 +1,14 @@
-# No duden en preguntar por cualquier duda que tengan.
+# A Blank PhoneGap App
 
-# Atte. Roberto Sepúlveda / Yerald Silva
+## Usage
+
+### PhoneGap CLI
+
+    $ phonegap create my-app --template blank
+
+### Desktop
+
+In your browser, open the file:
+
+    /www/index.html
 
