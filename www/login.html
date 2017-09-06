@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/login.css"  media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.12.3.min.js" charset="utf-8"></script>
+    <script src="bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+	
+  </head>
+  <body >         
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form method="post" action="php/login.php">
+            <br><br>
+            <h1><p class="text-center"><strong><em>Oiga Vecino!</p></strong></em></h1>
+            <br><br>
+			
+            <div class="form-group">
+              <label for="user">Email:</label>
+              <input type="text" name="user" id="user" class="form-control entradas">
+            </div>
+            <div class="form-group">
+              <label  for="pass">Contraseña:</label>
+              <input type="password" name="pass" id="pass" class="form-control entradas">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <input align="center" type="button" name="login" id="login" value="Ingresar"class="btn btn-succ btn-lg btn-block">
+            </div>
+            <br>
+            <span id="result"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

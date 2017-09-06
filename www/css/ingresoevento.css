@@ -1,0 +1,81 @@
+
+body{
+	background-image: url(https://lh3.googleusercontent.com/a9HTWfMpeyXHLdc79dOzKVlGsJePokQfu-5aZCqfFRbJwT1bftN4ThKwayWZpfKTMss=h310) !important;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+.container h1{
+  font-style:italic;
+  font-weight:bold;
+  font-size:4em;
+  font-family:Monaco,Georgia,Times,serif;
+}
+
+.form-group{
+	font-family:Monaco,Georgia,Times,serif;
+	font-size: 2em;
+}
+
+.form-control entrada2{
+	
+   font-family:Monaco,Georgia,Times,serif;
+   font-size: 2em;
+   height: 10em;
+   width: 500px;
+}
+
+.contenedor-botones{
+	
+	display : inline-block;
+	width : 99%;
+	
+}
+
+
+.btn-succ1{
+
+ font-family:Monaco,Georgia,Times,serif;
+ color: black;
+ background-color: #F50414;
+ font-weight: bold;
+ font-size: 1em;
+ display: block;
+ margin-left: auto;
+ margin-right: auto
+ 
+ width : 33%;
+ 
+}
+
+.btn-succ2 {
+
+ font-family:Monaco,Georgia,Times,serif;
+ color: black;
+ background-color: #F57504;
+ font-weight: bold;
+ font-size: 1em;
+ display: block;
+ margin-left: auto;
+ margin-right: auto
+ 
+  width : 33%;
+ 
+}
+
+.btn-succ3 {
+
+ font-family:Monaco,Georgia,Times,serif;
+ color: black;
+ background-color: #042CF5;
+ font-weight: bold;
+ font-size: 1em;
+ display: block;
+ margin-left: auto;
+ margin-right: auto
+ 
+  width : 33%;
+ 
+}
+
+/* https://www.youtube.com/watch?v=Ovxs772gHmE GOOGLE MAPS*/
