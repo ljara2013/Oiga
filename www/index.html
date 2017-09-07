@@ -1,49 +1,37 @@
+  
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <title>Oiga</title>
-  <script src="js/jquery-3.2.1.min.js"></script>															<!--JQuery-->
-  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">		<!--Bootstrap CSS-->
-  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>						<!--Bootstrap JS-->
-  <script>
-      $(document).ready(Principal);
-      function Principal(){
-          $(".row").css({"background":"magenta"});				//borrar desde aquí
-          $("#div1").css({"background":"green"});
-          $("#div2").css({"background":"orange"});
-          $("#div2").html("y JQuery están ");
-          $("#div3").css({"background":"skyblue"});
-          $("#div4").css({"background":"yellow"});
-          $("#div5").css({"background":"orange"});
-          $("#div6").css({"background":"green"});
-          $("#div7").css({"background":"skyblue"});
-          $("#div8").css({"background":"yellow"});
-          $("#div9").css({"background":"orange"});			//hasta aquí
-      }
-  </script>
+<meta charset="UTF-8">
+<title>Sign-Up/Login Form</title>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- Todo el frontend debe idealmente ir dentro de containers como este, con sus rows y columns donde convenga-->
-  <div class="container-fluid">
-  	<div class="row">
-  		<div id="div1" class="col-xs-12 col-sm-4 col-md-4">Bootstrap</div>		<!--borrar desde aquí-->
-  		<div id="div2" class="col-xs-12 col-sm-4 col-md-4">Está</div>
-  		<div id="div3" class="col-xs-12 col-sm-4 col-md-4">Funcionando</div>
-  	</div>
-  	<div class="row">
-  		<div class="col-xs-12 col-sm-3 col-md-3">
-  			<div class="row">
-  				<div id="div4" class="col-xs-4">sipue</div>
-  				<div id="div5" class="col-xs-4">sipue</div>
-  				<div id="div6" class="col-xs-4">sipue</div>
-  			</div>
-  		</div>
-  		<div id="div7" class="col-xs-12 col-sm-3 col-md-3">siiipue</div>
-  		<div id="div8" class="col-xs-12 col-sm-3 col-md-3">siiipue</div>
-  		<div id="div9" class="col-xs-12 col-sm-3 col-md-3">siiipue</div>			<!--hasta aquí-->
-  	</div>
+<div class="form">  
+  <div id="login">   
+    <h1>Bienvenido Vecino!</h1>
+    <form action="http://www.losturnos.cf/tareas_u/oiga/validate.php" method="post"> 
+      
+      <div class="field-wrap">
+        <label>Correo Electronico<span class="req">*</span></label>
+        <input name="mail" type="email" required autocomplete="off"/>
+      </div>
+
+      <div class="field-wrap">
+        <label>Password<span class="req">*</span></label>
+        <input name="pass" type="password" required autocomplete="off"/>
+      </div>
+          
+      <p class="forgot"><a href="#">Olvido su clave?</a></p>
+          
+      <button class="button button-block"/>Ingresa!</button>
+          
+    </form>
   </div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/index.js"></script>
 </body>
 </html>
