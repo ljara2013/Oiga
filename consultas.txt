@@ -1,0 +1,7 @@
+Cambios en tabla eventos:
+
+Se modificó la id pues estaba mal, se añadió campos "id_usuario", que es la foreign key correcta y "anonimo", que será 0 por defecto, y 1 si usuario decide publicar evento como anónimo.
+
+DROP TABLE eventos;
+
+CREATE TABLE eventos (id smallint not null AUTO_INCREMENT PRIMARY KEY, id_usuario smallint, anonimo tinyint DEFAULT 0, tipo smallint, titulo varchar(30), descripcion varchar(254), coordenadas varchar(150), fecha date, FOREIGN KEY (id_usuario) REFERENCES usuarios(id));
