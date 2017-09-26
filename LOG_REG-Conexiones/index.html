@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/loginyregistro.css"  media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<script src="js/jquery-1.12.3.min.js" charset="utf-8"></script>
+    <script src="bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script>
+	
+	$(document).ready(function(){
+		$("#btnenv").click(function(){
+			var email = $("#mail").val();
+			var passw = $("#pass").val();
+			
+			
+			$.ajax({
+				type: "POST",
+				url: "https://unreformed-falls.000webhostapp.com/nuevo/validate.php", 
+				data: {mail:email,pass:passw},
+				success: function(data){
+					console.log("dato devuelto "+data);
+					var datos = JSON.parse(data);
+					
+					console.log(datos);
+		
+					if( datos == '2'){
+						window.location = "RegistroFinal.html";
+					}else if( datos == '1'){
+						window.location = "inicio.html";
+					}
+					else{
+						window.location = "index.html";
+					}
+			}});
+		});
+	});
+	
+</script>
+	
+  </head>
+  
+  <body >         
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form method="post" action="#">
+            <br><br>
+            <h3><p class="text-center"><strong><em>Bienvenid@ a Oiga Vecin@!</p></strong></em></h3>
+			<h1><p class="text-center"><strong><em>Una Aplicación para su Comunidad.</p></strong></em></h1>
+            <br>
+  
+            <div class="inset">
+              <p>
+               <label for="mail">Email: </label>
+               <input type="text" name="mail" id="mail" placeholder="Ingrese su correo electrónico">
+              </p>
+              <p>
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="pass" id="pass" placeholder="Ingrese su contraseña">
+              </p>
+             <br><br>
+          
+            <br>
+           
+           
+</form>
+             <button type ="button" id="btnenv" class="btn btn-succ btn-lg btn-block"/>Ingresar</button>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+</body>
+</html>

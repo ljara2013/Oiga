@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="js/jquery-1.12.3.min.js" charset="utf-8"></script>
+
+<script>
+$(document).ready(Principal);
+function Principal(){
+	recibir();
+}
+
+function recibir(){
+  $.ajax({
+    url: "https://unreformed-falls.000webhostapp.com/nuevo/eventos.php",
+    type: "POST",
+    success: function(data){
+      var datos = JSON.parse(data);
+      console.log(datos);
+      var salida = "";
+      for(var i=0; i<datos.length; i++){
+      	salida += '<div class="col s12 m8 offset-m2 l6 offset-l3"><div class="card-panel grey lighten-5 z-depth-1"><div class="row valign-wrapper"><div class="col s2"><img src="img/notification-flat.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class --></div><div class="col s10"><span class="black-text">';
+      	salida += datos[i]["titulo"];
+      	salida += '</span></div></div></div></div>';
+      }
+
+      salida+='<div class="menu"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a></div>';
+
+      $("#container1").html(salida);
+
+    }
+  })
+}
+
+</script>
+
+
+</head>
+
+<body>
+	<main>
+		<div id="container1" class="container">
+
+			<div class="menu">
+				<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+			</div>
+			
+
+
+		</div>
+	</main>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
