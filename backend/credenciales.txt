@@ -1,0 +1,3 @@
+BD="id2746458_oiga";						//datos del hosting
+usuario="id2746458_lesly";
+contraseña="123456";
