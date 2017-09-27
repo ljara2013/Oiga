@@ -5,3 +5,5 @@ contraseña="123456";
 000webhost: 
 correo: lesly1994@gmail.com
 clave: leslyabc123
+
+LOS ARCHIVOS ESTAN ES LA CARPETA "NUEVO"
