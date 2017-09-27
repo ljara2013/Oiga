@@ -23,7 +23,6 @@
 				url: "https://unreformed-falls.000webhostapp.com/nuevo/validate.php", 
 				data: {mail:email,pass:passw},
 				success: function(data){
-					console.log("dato devuelto "+data);
 					var datos = JSON.parse(data);
 					
 					console.log(datos);
@@ -31,6 +30,7 @@
 					if( datos == '2'){
 						window.location = "RegistroFinal.html";
 					}else if( datos == '1'){
+						alert("wena ah, era problema del inicio.html, entre otros detalles con la bd");
 						window.location = "inicio.html";
 					}
 					else{
