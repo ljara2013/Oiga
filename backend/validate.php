@@ -29,10 +29,10 @@ if($user->rowCount()>0){																	//Si el usuario está registrado
 	$_SESSION['nom1'] = htmlentities($fila['nombre']);			
 	$_SESSION['ape1'] = htmlentities($fila['apellido1']);		
 	$_SESSION['rang'] = htmlentities($fila['rango']);
-	echo $mail;																									//mando orden de entrar al sistema           (redireccionar en frontend mediante $.ajax de jquery)
+	echo 1;																									//mando orden de entrar al sistema           (redireccionar en frontend mediante $.ajax de jquery)
 }
 else{																				//sino,	
-	if($invi->rowCount()>0) echo 2;						//si es invitado, mando orden de ir a completar registro   (redireccionar en frontend mediante $.ajax de jquery)
+	if($invi->rowCount()>0) echo $mail;						//si es invitado, mando orden de ir a completar registro   (redireccionar en frontend mediante $.ajax de jquery)
 	else echo 3;															//si tampoco es invitado, mando orden de ir al index       (redireccionar en frontend mediante $.ajax de jquery)
 }
 ?>
