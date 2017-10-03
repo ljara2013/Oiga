@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ingreso del Evento.</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/ingreso.css"  media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.12.3.min.js" charset="utf-8"></script>
+    <script src="bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+	
+  </head>
+  
+  <body >         
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form method="post" action="#">
+            <br><br>
+			<h3><p class="text-center"><strong><em>Publique un Evento</p></strong></em></h3>
+            <br>
+  
+            <div class="inset">
+              <p>
+               <label for="titulo">Ingrese título del evento:</label>
+               <input type="text" name="titulo" id="titulo" placeholder="Ingrese el título del evento a publicar"class="form-control entradas">
+              </p>
+              <p>
+               <label  for="descripcion">Descripción del suceso:</label>
+			  <textarea name="descripcion" id="descripcion" placeholder="Describa acá el evento que desea publicar" width="100px" class="entrada2"></textarea> 
+              </p>
+			  
+			  <p>
+			  <label> Seleccione el tipo de evento que publicará: </label>
+			  <select name="TipoEvento" size"4">
+
+                 <option id="1">Reclamo</option>
+
+                 <option id="2">Dato Útil</option>
+
+                 <option id="3">Alerta</option>
+
+             </select>
+			  </p>
+             <br>
+			 <div class="app">
+			 
+			 <div id="deviceready" class = "blink">
+              <label  for="descripcion">Ubicación del evento:</label>
+			  
+			  <p class="event listening"> Conectándose... </p>
+			  <p class="event received">Servidor Listo </p>
+			 
+            </div>
+			 <br>
+            <div class="form-group">
+              <input align="center" type="button" name="publicar" id="publicar" value="Publicar Evento"class="btn btn-succ btn-lg btn-block">
+            </div>
+            <br>
+            <span id="result"></span>
+			
+			
+			
+			
+ 
+			
+           
+</form>
+  </div>
+</div>
+</div>
+</body>
+</html>
