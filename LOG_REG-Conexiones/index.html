@@ -34,8 +34,9 @@
 					}
 					else{
 					   //$("#mail").val(datos.mail);
+						$.post("RegistroFinal.html",{mail:email},function(htmlexterno){$("#inset#mail").html(htmlexterno);}); 
 						window.location = "RegistroFinal.html";
-						$("#mail").val(datos.mail);
+						
 						
 					}
 			}});
