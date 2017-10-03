@@ -27,14 +27,16 @@
 					
 					console.log(datos);
 		
-					if( datos == '2'){
-						window.location = "RegistroFinal.html";
-					}else if( datos == '1'){
-						alert("wena ah, era problema del inicio.html, entre otros detalles con la bd");
+					if( datos == '1'){
 						window.location = "inicio.html";
+					}else if( datos == '3'){
+						window.location = "index.html";
 					}
 					else{
-						window.location = "index.html";
+					   //$("#mail").val(datos.mail);
+						window.location = "RegistroFinal.html";
+						$("#mail").val(datos.mail);
+						
 					}
 			}});
 		});
