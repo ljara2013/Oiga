@@ -19,6 +19,17 @@
 			var direc = $("#direccion").val();
 			var fono = $("#telefono").val();
 		
+			function getParameterByName(name, url) {
+                          if (!url) url = window.location.href;
+                          name = name.replace(/[\[\]]/g, "\\$&");
+                          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                          results = regex.exec(url);
+                          if (!results) return null;
+                          if (!results[0]) return '';
+                          return decodeURIComponent(results[0].replace(/\+/g, " "));
+                         }
+		    
+			var email = getParameterByName('#mail');
 			
 			$.ajax({
 				type: "POST",
@@ -55,7 +66,7 @@
             <div class="inset">
               <p>
                <label for="user">Email: </label>
-               <input type="text" name="user" id="mail" placeholder="Ingrese su correo electrónico" disabled="disabled">
+               <input type="text" name="user" id="mail" placeholder="Ingrese su correo electrónico" disabled="disabled" onblur= getParameterByName('#mail')>
               </p>
 			  <p>
                <label for="nombre">Nombre: </label>
