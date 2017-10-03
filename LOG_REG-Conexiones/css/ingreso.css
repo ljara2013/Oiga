@@ -1,0 +1,114 @@
+
+body {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    color : white;
+    font-size:16px;
+    background:#2F4F4F;
+}
+form, option {
+  background:#000000; 
+  width:600px;
+  margin:30px auto;
+  border-radius:0.5em;
+  border:1px solid #191919;
+  overflow:hidden;
+  position:relative;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+}
+.inset {
+ 	padding:30px; 
+    border-top:1px solid #19191a;
+}
+
+form h1,h3{
+  font-size:24px;
+  text-shadow:0 1px 0 black;
+  text-align:center;
+  padding:15px 0;
+  border-bottom:1px solid rgba(0,0,0,1);
+  position:relative;
+}
+
+form h1:after {
+  content:"";
+  display:block;
+  width:250px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:50px;
+  pointer-events:none;
+  transform:rotate(70deg);
+  background:linear-gradient(50deg, rgba(255,255,255,0.15), rgba(0,0,0,0));
+  
+}
+form h3:after {
+  content:"";
+  display:block;
+  width:250px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:50px;
+  pointer-events:none;
+  transform:rotate(70deg);
+  background:linear-gradient(50deg, rgba(255,255,255,0.15), rgba(0,0,0,0));
+  
+}
+
+label {
+ color:#666;
+  display:block;
+  padding-bottom:10px;
+  
+}
+
+.entrada2{
+	
+  width:100%;
+  padding:20px 10px;
+  background:linear-gradient(#1f2124, #27292c);
+  border:1px solid #222;
+  box-shadow:0 1px 0 rgba(255,255,255,0.1);
+  border-radius:0.3em;
+  margin-bottom:20px;
+  
+
+}
+
+
+.p-container{
+	
+	padding:0 20px 20px 20px;
+}
+select,
+input[type=text],
+input[type=password] {
+ width:100%;
+  padding:20px 10px;
+  background:linear-gradient(#1f2124, #27292c);
+  border:1px solid #222;
+  box-shadow:0 1px 0 rgba(255,255,255,0.1);
+  border-radius:0.3em;
+  margin-bottom:20px;
+}
+
+
+
+
+.btn-succ,
+.btn-succ:hover,
+.btn-succ:active {
+
+ font-family:Monaco,Georgia,Times,serif;
+ color: black;
+ 
+ background-color: #D2691E  ;
+ font-weight: bold;
+ font-size: 1em;
+ 
+ display: block;
+ margin-left: auto;
+ margin-right: auto
+ 
+}
