@@ -1,4 +1,4 @@
-BD="id2746458_oiga";						//datos del hosting
+﻿BD="id2746458_oiga";						//datos del hosting
 usuario="id2746458_lesly";
 contraseña="123456";
 
@@ -7,3 +7,9 @@ correo: lesly1994@gmail.com
 clave: leslyabc123
 
 LOS ARCHIVOS ESTAN ES LA CARPETA "NUEVO"
+
+
+datos para login:
+
+usuario registrado: lesly@gmail.com 1234
+usuario invitado: pepe 123456
