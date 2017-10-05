@@ -28,18 +28,28 @@ class TableRows extends RecursiveIteratorIterator {
     } 
 }
 
-
-
 try {
-	$eventos=$db->prepare("SELECT * FROM `eventos`");
-	$eventos->execute();
-	
-    $result = $eventos->setFetchMode(PDO::FETCH_ASSOC); 
-    foreach(new TableRows(new RecursiveArrayIterator($eventos->fetchAll())) as $k=>$v) { 
-        echo $v. "-" ;
+  
+  $sql = "SELECT * FROM `eventos`";
+  $result = $db->query($sql);
+
+  // If the SQL query is succesfully performed ($result not false)
+  if($result !== false) {     
+    $cols = $result->columnCount();           // Number of returned columns
+
+    echo 'Number of returned columns: '. $cols. '<br />';
+
+    // Parse the result set
+    foreach($result as $row) {
+      echo $row['id']. ' - '. $row['tipo']. ' - '. $row['titulo']. ' - '. $row['coodenadas']. '<br />';
     }
+  }
+
+  $db = null;        // Disconnect
 }
 catch(PDOException $e) {
-    echo "Error: " . $e->getMessage();
+  echo $e->getMessage();
 }
+
+
 ?>

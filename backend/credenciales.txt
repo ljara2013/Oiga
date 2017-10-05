@@ -1,9 +1,3 @@
 BD="id2746458_oiga";						//datos del hosting
 usuario="id2746458_lesly";
-contraseÃ±a="123456";
-
-000webhost: 
-correo: lesly1994@gmail.com
-clave: leslyabc123
-
-LOS ARCHIVOS ESTAN ES LA CARPETA "NUEVO"
+contraseña="123456";
