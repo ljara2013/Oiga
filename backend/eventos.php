@@ -11,7 +11,7 @@ if (!isset($_SESSION)) {
   session_start();
 }
 try {
-	$eventos=$db->prepare("SELECT * FROM `eventos`");
+		$eventos=$db->prepare("SELECT usuarios.nombre, eventos.titulo, usuarios.nombre, eventos.anonimo, eventos.tipo,eventos.descripcion, eventos.coordenadas, eventos.fecha FROM eventos INNER JOIN usuarios ON eventos.id_usuario=usuarios.id;");
 	$eventos->execute();
 
         $resul = $eventos->fetchAll(PDO::FETCH_ASSOC);     //crea un arreglo con todos los datos     
