@@ -15,7 +15,7 @@ if (!isset($_SESSION)) {
 $id= $_POST['id'];
 
 try {
-	$seleccionar=$db->prepare("SELECT * FROM eventos WHERE id= :id");
+	 $seleccionar=$db->prepare("SELECT usuarios.nombre, eventos.titulo, usuarios.nombre, eventos.anonimo, eventos.tipo,eventos.descripcion, eventos.coordenadas, eventos.fecha FROM eventos INNER JOIN usuarios ON eventos.id_usuario=usuarios.id WHERE eventos.id=:id ");
 	$seleccionar->bindValue(':id',id,PDO::PARAM_INT);    //PDO::PARAM_INT para enteros
         $seleccionar->execute();
 	
